@@ -120,8 +120,8 @@
               </li>
 
               <li class="menu-header">Panic Button</li>
-              <li class="<?=isset($active_menu_news)?$active_menu_news:'' ?>">
-                <a class="nav-link" href="<?=base_url('berita')?>">
+              <li class="<?=isset($active_menu_alat)?$active_menu_alat:'' ?>">
+                <a class="nav-link" href="<?=base_url('data_alat')?>">
                   <i class="fas fa-tools"></i><span>Data Alat</span>
                 </a>
               </li>

@@ -83,6 +83,13 @@ $route['umkm/detail'] = 'PotensiController/show_umkm';
 $route['umkm/edit'] = 'PotensiController/edit_umkm';
 $route['umkm/hapus/(:any)'] = 'PotensiController/destroy_umkm/(:any)';
 
+//Data Alat
+$route['data_alat'] = 'AlatController';
+$route['data_alat/simpan'] = 'AlatController/store';
+$route['data_alat/edit'] = 'AlatController/edit';
+$route['data_alat/ubah'] = 'AlatController/update';
+$route['data_alat/hapus/(:any)'] = 'AlatController/delete/$1';
+
 //Settingan 
 $route['(:any)'] = 'errors/show_404';
 $route['(:any)/(:any)'] = 'errors/show_404';
