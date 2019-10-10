@@ -125,8 +125,8 @@
                   <i class="fas fa-tools"></i><span>Data Alat</span>
                 </a>
               </li>
-              <li class="<?=isset($active_menu_news)?$active_menu_news:'' ?>">
-                <a class="nav-link" href="<?=base_url('berita')?>">
+              <li class="<?=isset($active_menu_registrasi)?$active_menu_registrasi:'' ?>">
+                <a class="nav-link" href="<?=base_url('registrasi_alat')?>">
                   <i class="fas fa-toolbox"></i><span>Registrasi Alat</span>
                 </a>
               </li>

@@ -90,6 +90,11 @@ $route['data_alat/edit'] = 'AlatController/edit';
 $route['data_alat/ubah'] = 'AlatController/update';
 $route['data_alat/hapus/(:any)'] = 'AlatController/delete/$1';
 
+//Registrasi Alat
+$route['registrasi_alat'] = 'AlatController/registrasi_alat';
+$route['registrasi_alat/detail'] = 'AlatController/detail_registrasi_alat';
+$route['registrasi_alat/hapus/(:any)'] = 'AlatController/delete_registrasi_alat/$1';
+
 //Settingan 
 $route['(:any)'] = 'errors/show_404';
 $route['(:any)/(:any)'] = 'errors/show_404';
