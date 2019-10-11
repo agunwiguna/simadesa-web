@@ -14,7 +14,13 @@ class PanicButtonController extends CI_Controller {
 
 	public function index()
 	{
-		
+		$data = array(
+			'title' => 'Panic Button',
+			'active_menu_pb' => 'active'
+		);
+		$this->load->view('layouts/header',$data);
+		$this->load->view('read/v_pb');
+		$this->load->view('layouts/footer');
 	}
 
 }
