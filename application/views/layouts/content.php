@@ -103,6 +103,41 @@
               </div>
             </div>
           </div>
+          <div class="col-6">
+            <div class="card">
+              <!-- <div class="card-header">
+              
+              </div> -->
+              <div class="card-body">
+                <?php
+                    $feed = file_get_contents("http://rss.detik.com/index.php/detikcom");           
+                    
+//$feed = file_get_contents($_GET['url']);
+                    $xml = new SimpleXmlElement($feed, LIBXML_NOCDATA);
+
+                    if(isset($xml->channel)) {
+                      $cnt = count($xml->channel->item);
+                      echo "<table>";
+                      for($i=0; $i<$cnt; $i++)
+                      {
+                        echo "<tr><td>";
+                        $url = $xml->channel->item[$i]->link;
+                        $title = $xml->channel->item[$i]->title;
+                        $desc = $xml->channel->item[$i]->description;
+                        echo '<h4><a href="'.$url.'">'.$title.'</a></h4>'.$desc.'<br>';
+                        echo "</tr></td>";
+                      }
+                      echo "</table>";
+                    }
+                    else
+                    {
+                      echo "Bukan RSS, kemungkinan besar ATOM, gunakan cara membaca atom";
+                    }
+                ?>
+
+              </div>
+            </div>
+          </div>
       </div>
     </div>            
 
