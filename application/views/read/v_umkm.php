@@ -34,7 +34,6 @@
                         <td><?=$row['nik']?></td>
                         <td><?=$row['nama']?></td>
                         <td><?=$row['nama_usaha']?></td>
-                        <td><?=$row['status']?></td>
                         <td>
                         	<a href="#" class="open_modal" id='<?=$row['id_umkm']?>'>
 	                        	<button class="btn btn-icon btn-sm btn-warning">

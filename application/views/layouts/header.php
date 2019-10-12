@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
   <title><?=$title;?> &mdash; Simadesa</title>
-
+  <link rel="shortcut icon" href="<?=base_url()?>src/back/assets/img/favicon.ico">
   <!-- General CSS Files -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -130,8 +130,8 @@
                   <i class="fas fa-toolbox"></i><span>Registrasi Alat</span>
                 </a>
               </li>
-              <li class="<?=isset($active_menu_news)?$active_menu_news:'' ?>">
-                <a class="nav-link" href="<?=base_url('berita')?>">
+              <li class="<?=isset($active_menu_pb)?$active_menu_pb:'' ?>">
+                <a class="nav-link" href="<?=base_url('pb')?>">
                   <i class="fas fa-desktop"></i><span>Monitoring Warga</span>
                 </a>
               </li>

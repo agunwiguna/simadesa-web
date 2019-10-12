@@ -44,7 +44,7 @@ class PotensiModel extends CI_Model {
     public function getDetailUsulan($id_usulan)
 	{
 		$this->db->select('*');
-		$this->db->from('tbl_usulan');
+		$this->db->from('tbl_usulan a');
 		$this->db->join('tbl_penduduk b', 'b.nik = a.nik');
 		$this->db->where('id_usulan', $id_usulan);
 		$query = $this->db->get();
@@ -97,7 +97,8 @@ class PotensiModel extends CI_Model {
 	public function getAllUmkm()
 	{
 		$this->db->select('*');
-		$this->db->from('tbl_umkm');
+		$this->db->from('tbl_umkm a');
+		$this->db->join('tbl_penduduk b', 'b.nik = a.nik');
 		$query = $this->db->get();
 		return $query->result_array();
 	}
