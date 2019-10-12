@@ -25,6 +25,7 @@
                         <th>Nama</th>                   
                         <th>Tanggal</th>
                         <th>Status</th>
+                        <th>Verifikasi</th>
                         <th>Aksi</th>
                       </tr>
                     </thead>
@@ -36,6 +37,19 @@
                         <td><?=$row['nama']?></td>
                         <td><?=$row['created_at']?></td>
                         <td><?=$row['status']?></td>
+                        <td>
+                          <?php if ($row['status']=='Menunggu') {?>
+                            <a href="<?=base_url('usulan/verifikasi/'.$row['id_usulan']);?>">
+                              <button class="btn btn-icon btn-sm btn-primary">
+                                  <i class="fas fa-check"></i> Selesai
+                              </button>
+                            </a>
+                          <?php } else {?>
+                              <button class="btn btn-icon btn-sm btn-primary disabled">
+                                  <i class="fas fa-check"></i> Selesai
+                              </button>
+                          <?php } ?>
+                        </td>
                         <td>
                         	<a href="#" class="open_modal" id='<?=$row['id_usulan']?>'>
 	                        	<button class="btn btn-icon btn-sm btn-warning">

@@ -130,7 +130,13 @@ class PotensiModel extends CI_Model {
 		$this->db->where($where);
 		$res = $this->db->delete("tbl_umkm");
 		return $res;
-	}	
+	}
+
+	public function update_usulan($id_usulan,$data){
+        $this->db->where(array('id_usulan' => $id_usulan));
+        $res = $this->db->update('tbl_usulan',$data);
+        return $res;
+    }	
 
 }
 

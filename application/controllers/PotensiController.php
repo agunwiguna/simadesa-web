@@ -263,12 +263,28 @@ class PotensiController extends CI_Controller {
 		$res = $this->pm->delete_umkm($id_umkm);
 		if($res>=1){
 			$this->session->set_userdata('proses_hapus','berhasil');
-			redirect('investor');
+			redirect('umkm');
 		}else{
 			$this->session->set_userdata('gagal_proses','gagal');
-			redirect('investor');
+			redirect('umkm');
 		}
 	}
+
+	public function verifikasi_usulan($id_usulan)
+	{
+		$id_usulan = $this->uri->segment(3);
+		$data['status'] = 'Sudah ditangani';
+		unset($data['id_usulan']);
+		$res = $this->pm->update_usulan($id_usulan,$data);
+		if($res>=1){
+			$this->session->set_userdata('proses','berhasil');
+			redirect('usulan');
+		}else{
+			$this->session->set_userdata('gagal_proses','gagal');
+			redirect('usulan');
+		}
+	}
+
 
 }
 

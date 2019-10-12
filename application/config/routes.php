@@ -70,6 +70,8 @@ $route['potensi/hapus/(:any)'] = 'PotensiController/destroy/(:any)';
 //Usulan
 $route['usulan'] = 'PotensiController/usulan';
 $route['usulan/detail'] = 'PotensiController/show_usulan';
+$route['usulan/verifikasi/(:any)'] = 'PotensiController/verifikasi_usulan/(:any)';
+$route['usulan/hapus/(:any)'] = 'PotensiController/destroy_usulan/(:any)';
 
 //Investor Desa
 $route['investor'] = 'PotensiController/investor';
