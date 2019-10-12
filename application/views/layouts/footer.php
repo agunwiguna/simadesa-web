@@ -8,6 +8,32 @@
       </footer>
     </div>
   </div>
+  
+  <div class="modal fade" tabindex="-1" role="dialog" id="myModal2">
+      <div class="modal-dialog" role="document">
+          <div class="modal-content">
+        
+            <div class="modal-body">
+                <form role="form" id="form-validation1" action="#" method="post">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <h2> Handle this ? </h2>
+                                <input type="hidden" id="id_d" name="id_d">
+                            </div>
+                        </div>
+                    </div>                                
+                </form>
+            </div>
+            <div class="modal-footer bg-whitesmoke br">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <a href="#" class="btn btn-success " data-dismiss="modal" onclick="actionKec()">Yes</a>
+            </div>
+    
+          </div>
+      </div>
+  </div>
+
 
   <!-- General JS Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

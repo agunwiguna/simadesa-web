@@ -69,22 +69,22 @@
             </button>
         </div>
         <form action="<?=base_url('kategori_layanan/simpan')?>" method="POST" autocomplete="off">
-        <div class="modal-body">
-            <div class="form-row">
-                <div class="form-group col-md-12">
-                    <label for="nama">Nama Layanan</label>
-                    <input type="text" class="form-control" name="nama_layanan" id="nama" placeholder="Masukan Nama Layanan.." required autofocus>
-                </div>
-                <div class="form-group col-md-12">
-                    <label for="keterangan">Keterangan</label>
-                    <textarea name="keterangan" id="keterangan" placeholder="Masukan Keterangan" class="form-control"></textarea>
-                </div>
-            </div>
-        </div>
-        <div class="modal-footer bg-whitesmoke br">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
-            <button type="submit" class="btn btn-primary">Simpan</button>
-        </div>
+          <div class="modal-body">
+              <div class="form-row">
+                  <div class="form-group col-md-12">
+                      <label for="nama">Nama Layanan</label>
+                      <input type="text" class="form-control" name="nama_layanan" id="nama" placeholder="Masukan Nama Layanan.." required autofocus>
+                  </div>
+                  <div class="form-group col-md-12">
+                      <label for="keterangan">Keterangan</label>
+                      <textarea name="keterangan" id="keterangan" placeholder="Masukan Keterangan" class="form-control"></textarea>
+                  </div>
+              </div>
+          </div>
+          <div class="modal-footer bg-whitesmoke br">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+              <button type="submit" class="btn btn-primary">Simpan</button>
+          </div>
         </form>
         </div>
     </div>
