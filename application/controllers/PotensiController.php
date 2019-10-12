@@ -220,7 +220,7 @@ class PotensiController extends CI_Controller {
 		}
 	}
 
-	public function destroy_investor()
+	public function destroy_investor($id_investor)
 	{
 		$id_investor = $this->uri->segment(3);
 		$id_investor = array( 'id_investor' => $id_investor );
@@ -246,24 +246,28 @@ class PotensiController extends CI_Controller {
 		$this->load->view('layouts/footer');
 	}
 
-	public function store_umkm()
+	public function show_umkm()
 	{
-		# code...
+		$id_umkm = $this->input->get('id');
+		$data = array(
+			'content' => $this->pm->getDetailUmkm($id_umkm)
+		);
+		$this->load->view('detail/d_umkm',$data);
 	}
 
-	public function edit_umkm()
-	{
-		# code...
-	}
 
-	public function update_umkm()
+	public function destroy_umkm($id_umkm)
 	{
-		# code...
-	}
-
-	public function delete_umkm()
-	{
-		# code...
+		$id_umkm = $this->uri->segment(3);
+		$id_umkm = array( 'id_umkm' => $id_umkm );
+		$res = $this->pm->delete_umkm($id_umkm);
+		if($res>=1){
+			$this->session->set_userdata('proses_hapus','berhasil');
+			redirect('investor');
+		}else{
+			$this->session->set_userdata('gagal_proses','gagal');
+			redirect('investor');
+		}
 	}
 
 }

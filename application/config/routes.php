@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['default_controller'] = 'GeneralController/index';
+$route['default_controller'] = 'AuthController/index';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
@@ -55,6 +55,9 @@ $route['kategori_layanan/edit'] = 'LayananController/edit';
 $route['kategori_layanan/ubah'] = 'LayananController/update';
 $route['kategori_layanan/hapus/(:any)'] = 'LayananController/destroy/(:any)';
 $route['layanan'] = 'LayananController/layanan';
+$route['layanan/detail'] = 'LayananController/show_layanan';
+$route['layanan/hapus/(:any)'] = 'LayananController/hapus_layanan/(:any)';
+$route['layanan/verifikasi/(:any)'] = 'LayananController/verifikasi_layanan/(:any)';
 
 //Potensi Desa
 $route['potensi'] = 'PotensiController/index';

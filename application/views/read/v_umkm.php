@@ -87,7 +87,7 @@
 		$(".open_modal").click(function(e) {
 			var m = $(this).attr("id");
 			$.ajax({
-				url: "<?=base_url('penduduk/detail')?>",
+				url: "<?=base_url('umkm/detail')?>",
 				type: "GET",
 				data : {id: m,},
 				success: function (ajaxData){

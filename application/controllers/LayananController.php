@@ -85,6 +85,44 @@ class LayananController extends CI_Controller {
 		$this->load->view('layouts/footer');
 	}
 
+	public function show_layanan()
+	{
+		$id_layanan = $this->input->get('id');
+		$data = array(
+			'layanan' => $this->lm->getDetailLayanan($id_layanan)
+		);
+		$this->load->view('detail/d_layanan',$data);
+	}
+
+	public function hapus_layanan($id_layanan)
+	{
+		$id_layanan = $this->uri->segment(3);
+		$id_layanan = array( 'id_layanan' => $id_layanan );
+		$res = $this->lm->delete_layanan($id_layanan);
+		if($res>=1){
+			$this->session->set_userdata('proses_hapus','berhasil');
+			redirect('layanan');
+		}else{
+			$this->session->set_userdata('gagal_proses','gagal');
+			redirect('layanan');
+		}
+	}
+
+	public function verifikasi_layanan($id_layanan)
+	{
+		$id_layanan = $this->uri->segment(3);
+		$data['status'] = 'Selesai';
+		unset($data['id_layanan']);
+		$res = $this->lm->update_layanan($id_layanan,$data);
+		if($res>=1){
+			$this->session->set_userdata('proses','berhasil');
+			redirect('layanan');
+		}else{
+			$this->session->set_userdata('gagal_proses','gagal');
+			redirect('layanan');
+		}
+	}
+
 }
 
 /* End of file LayananController.php */

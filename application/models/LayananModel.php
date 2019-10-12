@@ -49,6 +49,30 @@ class LayananModel extends CI_Model {
 		return $query->result_array();
 	}
 
+	public function getDetailLayanan($id_layanan)
+	{
+		$this->db->select('*');
+		$this->db->from('tbl_layanan a');
+		$this->db->join('tbl_kategori_layanan b', 'b.id_kategori = a.id_kategori');
+		$this->db->join('tbl_penduduk c', 'c.nik = a.nik');
+		$this->db->where('id_layanan', $id_layanan);
+		$query = $this->db->get();
+		return $query->result_array();
+	}
+
+	public function delete_layanan($where)
+	{
+		$this->db->where($where);
+		$res = $this->db->delete("tbl_layanan");
+		return $res;
+	}
+
+	public function update_layanan($id_layanan,$data){
+        $this->db->where(array('id_layanan' => $id_layanan));
+        $res = $this->db->update('tbl_layanan',$data);
+        return $res;
+    }
+
 }
 
 /* End of file LayananModel.php */

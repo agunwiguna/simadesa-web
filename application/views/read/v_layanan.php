@@ -26,6 +26,8 @@
                         <th>Layanan</th>
                         <th>Tanggal</th>
                         <th>Status</th>
+                        <th>Hubungi User</th>
+                        <th>Verifikasi</th>
                         <th>Aksi</th>
                       </tr>
                     </thead>
@@ -39,12 +41,39 @@
                         <td><?=$row['created_at']?></td>
                         <td><?=$row['status']?></td>
                         <td>
+                          <?php 
+                            $ptn = "/^0/"; 
+                            $str = $row['kontak']; 
+                            $rpltxt = "62"; 
+                            $wa = preg_replace($ptn, $rpltxt, $str)
+                            //echo $wa;
+                          ?>
+                          <a href="https://api.whatsapp.com/send?phone=<?=$wa?>&text=Surat%20sudah%20selesai%20silahkan%20diambil%20di%20kantor" target="_blank">
+                            <button class="btn btn-icon btn-sm btn-success">
+                                  <i class="fab fa-whatsapp"></i> WhatsApp
+                              </button>
+                          </a>
+                        </td>
+                        <td>
+                          <?php if ($row['status']=='proses') {?>
+                            <a href="<?=base_url('layanan/verifikasi/'.$row['id_layanan']);?>">
+                              <button class="btn btn-icon btn-sm btn-primary">
+                                  <i class="fas fa-check"></i> Selesai
+                              </button>
+                            </a>
+                          <?php } else {?>
+                              <button class="btn btn-icon btn-sm btn-primary disabled">
+                                  <i class="fas fa-check"></i> Selesai
+                              </button>
+                          <?php } ?>
+                        </td>
+                        <td>
                         	<a href="#" class="open_modal" id='<?=$row['id_layanan']?>'>
 	                        	<button class="btn btn-icon btn-sm btn-warning">
 	                                <i class="far fa-eye"></i>
 	                            </button>
                         	</a>
-                            <a href="<?=base_url('penduduk/hapus/'.$row['id_layanan']);?>" class="delete-link">
+                            <a href="<?=base_url('layanan/hapus/'.$row['id_layanan']);?>" class="delete-link">
 	                            <button class="btn btn-icon btn-sm btn-danger">
 	                                <i class="fas fa-trash-alt"></i>
 	                            </button>
@@ -63,7 +92,7 @@
 	</section>
 
 	<!-- Modal Detail -->
-    <div id="ModalDetail" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div id="ModalDetail" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     </div>
 </div>
 <script src="<?=base_url()?>src/back/assets/modules/datatables/datatables.min.js"></script>
@@ -91,7 +120,7 @@
 		$(".open_modal").click(function(e) {
 			var m = $(this).attr("id");
 			$.ajax({
-				url: "<?=base_url('penduduk/detail')?>",
+				url: "<?=base_url('layanan/detail')?>",
 				type: "GET",
 				data : {id: m,},
 				success: function (ajaxData){

@@ -85,15 +85,15 @@
 </div>
 
 <script>
-     // Your web app's Firebase configuration
+      // Your web app's Firebase configuration
       var firebaseConfig = {
-        apiKey: "AIzaSyD_wWM26_OBbCU3-23l7HwK42oqowvqk8Y",
-        authDomain: "pertama-4edf9.firebaseapp.com",
-        databaseURL: "https://pertama-4edf9.firebaseio.com",
-        projectId: "pertama-4edf9",
-        storageBucket: "pertama-4edf9.appspot.com",
-        messagingSenderId: "973944515020",
-        appId: "1:973944515020:web:1e6ff7886d28c1d19f1569"
+        apiKey: "AIzaSyBR0f-Xl0CXtIkAIhT_WztEwmGc3GAEqfc",
+        authDomain: "simadesa-98da1.firebaseapp.com",
+        databaseURL: "https://simadesa-98da1.firebaseio.com",
+        projectId: "simadesa-98da1",
+        storageBucket: "simadesa-98da1.appspot.com",
+        messagingSenderId: "542710138221",
+        appId: "1:542710138221:web:e1b181d28f888db0108664"
       };
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);

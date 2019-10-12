@@ -118,7 +118,8 @@ class PotensiModel extends CI_Model {
     public function getDetailUmkm($id_umkm)
 	{
 		$this->db->select('*');
-		$this->db->from('tbl_umkm');
+		$this->db->from('tbl_umkm a');
+		$this->db->join('tbl_penduduk b', 'b.nik = a.nik');
 		$this->db->where('id_umkm', $id_umkm);
 		$query = $this->db->get();
 		return $query->result_array();
