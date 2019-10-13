@@ -12,6 +12,26 @@ class NewsModel extends CI_Model {
 		return $query->result_array();
 	}
 
+	public function getHotLatestDataNews()
+	{
+		$this->db->select('*');
+		$this->db->from('tbl_info');
+		$this->db->order_by('created_at', 'desc');
+		$this->db->limit(1);
+		$query = $this->db->get();
+		return $query->row_array();
+	}
+
+	public function getLatestDataNews()
+	{
+		$this->db->select('*');
+		$this->db->from('tbl_info');
+		$this->db->order_by('created_at', 'desc');
+		$this->db->limit(4,1);
+		$query = $this->db->get();
+		return $query->result_array();
+	}
+
 	public function store_news($data)
 	{
 		$query = $this->db->insert('tbl_info', $data);

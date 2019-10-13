@@ -25,6 +25,7 @@
         </div>
     </div>
 </section>
+<?php if(!empty($perangkatDesa)) : ?>
 <section id="structure" class="content">
     <div class="container">
         <div class="row mb-4">
@@ -33,196 +34,28 @@
             </div>
         </div>
         <div class="row">
+            <?php foreach ($perangkatDesa as $perangkatDesaMany) : ?>
             <div class="col-6 col-md-3 mb-3">
                 <div class="bg-avatar">
-                    <div class="row">
+                    <div class="row mb-2">
                         <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
+                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/perangkat_desa/'.$perangkatDesaMany['foto']) ?>')"></div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3 mb-3">
-                <div class="bg-avatar">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
+                            <h5 class="sub-title text-center"><?= $perangkatDesaMany['jabatan'] ?></h5>
+                            <p class="text-center"><?= $perangkatDesaMany['nama'] ?></p>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-3 mb-3">
-                <div class="bg-avatar">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-md-3 mb-3">
-                <div class="bg-avatar">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row my-3">
-            <div class="col-12">
-                <hr class="hr-white">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6 col-sm-3 mb-4">
-                <div class="bg-avatar">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-3 mb-4">
-                <div class="bg-avatar">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-3 mb-4">
-                <div class="bg-avatar">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-3 mb-4">
-                <div class="bg-avatar">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-3 mb-4">
-                <div class="bg-avatar">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-3 mb-4">
-                <div class="bg-avatar">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-3 mb-4">
-                <div class="bg-avatar">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-6 col-sm-3 mb-4">
-                <div class="bg-avatar">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-structure-img" style="background-image: url('<?= base_url('src/general/img/emid_koswara.jpg') ?>')"></div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <h5 class="sub-title text-center">Kepala Desa</h5>
-                            <p class="text-center">Emid Koswara</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <?php endforeach; ?>
         </div>
     </div>
 </section>
+<?php endif; ?>
+<?php if(!empty($infoBerita)) : ?>
 <section id="news" class="content">
     <div class="container">
         <div class="row mb-4 grid-divider">
@@ -230,161 +63,50 @@
                 <h1 class="text-center sub-title">BERITA</h1>
             </div>
         </div>
-        <div class="row">
+        <div class="row grid-divider">
             <div class="col-md-6">
-                <div class="bg-news-featured">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-news-img" style="background-image: url('<?= base_url('src/general/img/news.jpg') ?>')"></div>
+                <a class="text-decoration-none" href="#">
+                    <div class="bg-news-featured">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="bg-news-img" style="background-image: url('<?= base_url('src/info_desa/'.$infoHotBerita['image']) ?>')"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="bg-news-caption">
-                                <h4 class="sub-title">Pembagian Insentif RT dan RW</h4>
-                                <p>Deskripsi..</p>
-                                <span class="date-news">Jumat, 14 Juni 2019</span>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="bg-news-caption">
+                                    <h4 class="sub-title"><?= $infoHotBerita['judul'] ?></h4>
+                                    <span class="date-news"><?= $infoHotBerita['created_at'] ?></span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-6">
                 <div class="bg-news-small-featured">
-                    <div class="row grid-divider">
+                    <div class="row">
+                        <?php foreach ($infoBerita as $infoBeritaMany) : ?>
                         <div class="col-12">
-                            <div class="bg-news-small-content">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="bg-news-small-img" style="background-image: url('<?= base_url('src/general/img/news.jpg') ?>')"></div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h5 class="sub-title">Pembagian Insentif RT dan RW</h5>
-                                        <p>Deskripsi..</p>
-                                        <span class="date-news">Jumat, 14 Juni 2019</span>
+                            <a class="text-decoration-none" href="#">
+                                <div class="bg-news-small-content">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="bg-news-small-img" style="background-image: url('<?= base_url('src/info_desa/'.$infoBeritaMany['image']) ?>')"></div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <h4 class="sub-title"><?= $infoBeritaMany['judul'] ?></h4>
+                                            <span class="date-news"><?= $infoBeritaMany['created_at'] ?></span>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                        <div class="col-12">
-                            <div class="bg-news-small-content">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="bg-news-small-img" style="background-image: url('<?= base_url('src/general/img/news.jpg') ?>')"></div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h5 class="sub-title">Pembagian Insentif RT dan RW</h5>
-                                        <p>Deskripsi..</p>
-                                        <span class="date-news">Jumat, 14 Juni 2019</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="bg-news-small-content">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="bg-news-small-img" style="background-image: url('<?= base_url('src/general/img/news.jpg') ?>')"></div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h5 class="sub-title">Pembagian Insentif RT dan RW</h5>
-                                        <p>Deskripsi..</p>
-                                        <span class="date-news">Jumat, 14 Juni 2019</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="bg-news-small-content">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <div class="bg-news-small-img" style="background-image: url('<?= base_url('src/general/img/news.jpg') ?>')"></div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <h5 class="sub-title">Pembagian Insentif RT dan RW</h5>
-                                        <p>Deskripsi..</p>
-                                        <span class="date-news">Jumat, 14 Juni 2019</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-<section id="service" class="content">
-    <div class="container">
-        <div class="row mb-3">
-            <div class="col-12">
-                <h1 class="text-center sub-title">LAYANAN</h1>
-                <p class="text-center d-block d-sm-none">(Geser kiri atau kanan untuk melihat data tabel)</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <table id="table-data" class="table table-bordered table-striped table-responsive-md text-center">
-                    <thead>
-                        <tr>
-                            <th>No</th>
-                            <th>Nama Layanan</th>
-                            <th>Hari</th>
-                            <th>Waktu</th>
-                            <th>Petugas</th>
-                            <th>Kontak</th>
-                            <th>Aksi</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Pembuatan Kartu Keluarga</td>
-                            <td>Senin - Jum'at</td>
-                            <td>08:00 s/d 13:00</td>
-                            <td>Siti Rohaneti</td>
-                            <td>087827997797</td>
-                            <td><a href="#" class="btn btn-primary btn-sm btn-main"><i class="fas fa-paper-plane"></i> Pesan</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Pembuatan Kartu Keluarga</td>
-                            <td>Senin - Jum'at</td>
-                            <td>08:00 s/d 13:00</td>
-                            <td>Siti Rohaneti</td>
-                            <td>087827997797</td>
-                            <td><a href="#" class="btn btn-primary btn-sm btn-main"><i class="fas fa-paper-plane"></i> Pesan</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Pembuatan Kartu Keluarga</td>
-                            <td>Senin - Jum'at</td>
-                            <td>08:00 s/d 13:00</td>
-                            <td>Siti Rohaneti</td>
-                            <td>087827997797</td>
-                            <td><a href="#" class="btn btn-primary btn-sm btn-main"><i class="fas fa-paper-plane"></i> Pesan</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Pembuatan Kartu Keluarga</td>
-                            <td>Senin - Jum'at</td>
-                            <td>08:00 s/d 13:00</td>
-                            <td>Siti Rohaneti</td>
-                            <td>087827997797</td>
-                            <td><a href="#" class="btn btn-primary btn-sm btn-main"><i class="fas fa-paper-plane"></i> Pesan</a></td>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>Pembuatan Kartu Keluarga</td>
-                            <td>Senin - Jum'at</td>
-                            <td>08:00 s/d 13:00</td>
-                            <td>Siti Rohaneti</td>
-                            <td>087827997797</td>
-                            <td><a href="#" class="btn btn-primary btn-sm btn-main"><i class="fas fa-paper-plane"></i> Pesan</a></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-    </div>
-</section>
+<?php endif ?>

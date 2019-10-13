@@ -13,7 +13,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/edb6b6f0af.js" crossorigin="anonymous"></script>
     <!-- Roboto Font -->
-    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- Overide CSS -->
     <link rel="stylesheet" href="<?= base_url('src/general/css/style.css') ?>">
     <title><?= $title ?> | Babakan Asem</title>
@@ -26,18 +26,11 @@
             <div class="bg-primary-img" style="background-image: url('<?= base_url('src/general/img/main-bg.png') ?>')"></div>
         </div>
         <div class="container">
-            <div class="auth-nav row container">
-                <div class="col-12">
-                    <div class="float-right">
-                        <div class="py-2"><a href="#" class="btn btn-primary btn-sm btn-main"><i class="fas fa-sign-in-alt"></i> Masuk</a></div>
-                    </div>
-                </div>
-            </div>
             <div class="row h-100 align-items-center main-row">
                 <div class="col-12">
                     <nav class="navbar navbar-dark navbar-expand-md main-nav text-center text-md-left justify-content-center">
                         <button class="navbar-toggler mb-3" type="button" data-toggle="collapse" data-target=".dual-nav">
-                            <span class="navbar-toggler-icon" style="background-image: url('<?= base_url('src/general/img/logo-white.png') ?>')!important;"></span>
+                            <span class="navbar-toggler-icon" style="background-image: url('<?= base_url('src/general/img/logo-main.png') ?>')!important;"></span>
                         </button>
                         <div class="navbar-collapse collapse dual-nav order-2 order-md-1 justify-content-end first-nav">
                             <ul class="navbar-nav">
@@ -48,19 +41,19 @@
                                     <a class="nav-link" href="#about">TENTANG</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#structure">STRUKTUR</a>
+                                    <a class="nav-link" href="#vision_mission">VISI & MISI</a>
                                 </li>
                             </ul>
                         </div>
                         <a href="#page-top" class="navbar-brand mx-auto order-0 order-md-2 p-5 d-none d-sm-block">
                             <div class="bg-main-logo">
-                                <img class="main-logo" src="<?= base_url('src/general/img/logo-white.png') ?>" alt="">
+                                <img class="main-logo" src="<?= base_url('src/general/img/logo-main.png') ?>" alt="">
                             </div>
                         </a>
                         <div class="navbar-collapse collapse dual-nav order-3 order-md-3 second-nav">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#service">LAYANAN</a>
+                                    <a class="nav-link" href="#structure">STRUKTUR</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="#news">BERITA</a>
@@ -79,7 +72,7 @@
         <div class="container">
             <a class="navbar-brand" href="#page-top">
                 <div class="navbar-img">
-                    <img src="<?= base_url('src/general/img/logo-2-white.png') ?>" height="50"
+                    <img src="<?= base_url('src/general/img/logo-main.png') ?>" height="50"
                         class="d-inline-block align-top" alt="">
                 </div>
             </a>
@@ -97,19 +90,16 @@
                         <a class="nav-link" href="#about">TENTANG</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#structure">STRUKTUR</a>
+                        <a class="nav-link" href="#vision_mission">VISI & MISI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">LAYANAN</a>
+                        <a class="nav-link" href="#structure">STRUKTUR</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#news">BERITA</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">KONTAK</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link btn btn-sm btn-primary btn-sticky-main" href="<?= site_url('login') ?>"><i class="fas fa-sign-in-alt"></i> MASUK</a>
                     </li>
                 </ul>
             </div>

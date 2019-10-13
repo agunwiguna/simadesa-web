@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$route['default_controller'] = 'GeneralController/index';
+$route['default_controller'] = 'GeneralControlleroverride'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 //Auth
