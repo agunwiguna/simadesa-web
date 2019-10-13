@@ -1,6 +1,6 @@
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2018 <div class="bullet"></div> Design By Muhamad Nauval Azhar Modified By ERG TEAM
+          Copyright &copy; 2019 <div class="bullet"></div> Simadesa
         </div>
         <div class="footer-right">
           2.3.0
