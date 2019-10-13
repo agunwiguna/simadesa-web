@@ -22,7 +22,7 @@
         
         public function delete($id)
         {
-            $this->db->where('id_alat', $id);
+            $this->db->where('id_registrasi', $id);
             if($this->db->delete($this->table_registrasi)){
                 return true;
             } else {
