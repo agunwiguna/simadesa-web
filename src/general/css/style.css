@@ -30,6 +30,11 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Roboto';
+    color: #888888;
+}
+
 .content {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -52,23 +57,21 @@ html {
 }
 
 #about {
-    background-color: #c43e00;
-    color: #fff;
+    background-color: #FFF;
 }
 
 #vision_mission {
-    background-color: green;
-    color: #fff;
+    background-color: #f5f5fb;
 }
 
 #structure {
-    background-color: #827717;
-    color: #fff;
+    background-color: #FFF;
+    color: #000;
 }
 
 #news {
-    background-color: seagreen;
-    color: #fff;
+    background-color: #EAE9FF;
+    color: #000;
 }
 
 #service {
@@ -77,17 +80,20 @@ html {
 }
 
 #contact {
-    background-color: #a2a2a2;
-    color: #fff;
+    background-color: #f5f5fb;
 }
 
 #footbar {
-    background-color: #2C302F;
+    background-color: #6059F6;
     color: #fff;
 }
 
 .main-nav .navbar-nav .nav-item:not(:last-child) {
     border-right: 1px solid silver;
+}
+
+.main-nav .navbar-nav .nav-link {
+    color: rgba(255,255,255);
 }
 
 .main-nav .navbar-nav .nav-item {
@@ -97,7 +103,7 @@ html {
 
 .bg-main-logo {
     height: 225px;
-    background-color: #4b830d;
+    background-color: #6059F6;
     padding: 30px;
     border-radius: 50%;
 }
@@ -106,10 +112,24 @@ html {
     height: 100%;
 }
 
+.bg-main {
+    background-color: #6059F6;
+}
+
+.btn-sticky-main {
+    background-color: #554dcd;
+    border: none;
+}
+
+.btn-main {
+    background-color: #6059F6;
+    border: none;
+}
+
 .main-row .navbar-dark .navbar-toggler {
     border: none;
     border-radius: 50%;
-    background-color: #4b830d;
+    background-color: #6059F6;
     height: 125px;
     width: 125px;
 }
@@ -190,8 +210,18 @@ html {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    filter: brightness(0.25);
+    filter: brightness(0.15);
     z-index: -1;
+}
+
+.title-main {
+    color: #6059F6;
+    font-weight: bold;
+}
+
+.sub-title {
+    color: #000;
+    font-weight: bold;
 }
 
 .bg-about-img {
@@ -226,7 +256,7 @@ html {
 }
 
 .bg-avatar {
-    background-color: #DC3545;
+    background-color: #F8F8FF;
     padding: 5px;
 }
 
@@ -240,11 +270,12 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 3px solid #fff;
+    border: 3px solid #D2CFFF;
 }
 
 .bg-avatar h5 {
     margin: 0;
+    font-size: 1em;
 }
 
 .bg-news-img {
@@ -257,7 +288,6 @@ html {
 
 .bg-news-featured {
     background-color: #fff;
-    border: 1px solid #fff;
     color: #000;
     padding: 5px;
 }
@@ -280,7 +310,7 @@ html {
 
 .bg-news-small-featured .col-12:not(:last-child) .bg-news-small-content {
     padding-bottom: 5px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid rgb(245, 245, 245)
 }
 
 .bg-news-small-img {

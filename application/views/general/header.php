@@ -12,7 +12,8 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/edb6b6f0af.js" crossorigin="anonymous"></script>
-
+    <!-- Roboto Font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
     <!-- Overide CSS -->
     <link rel="stylesheet" href="<?= base_url('src/general/css/style.css') ?>">
     <title><?= $title ?> | Babakan Asem</title>
@@ -21,12 +22,14 @@
 
 <body id="page-top">
     <section id="#main" class="main-content h-100">
-        <div class="bg-primary-img" style="background-image: url('<?= base_url('src/general/img/main-bg.jpg') ?>')"></div>
+        <div class="bg-parent-primary">
+            <div class="bg-primary-img" style="background-image: url('<?= base_url('src/general/img/main-bg.png') ?>')"></div>
+        </div>
         <div class="container">
             <div class="auth-nav row container">
                 <div class="col-12">
                     <div class="float-right">
-                        <div class="py-2"><a href="#" class="btn btn-primary btn-sm"><i class="fas fa-sign-in-alt"></i> Masuk</a></div>
+                        <div class="py-2"><a href="#" class="btn btn-primary btn-sm btn-main"><i class="fas fa-sign-in-alt"></i> Masuk</a></div>
                     </div>
                 </div>
             </div>
@@ -72,7 +75,7 @@
             </div>
         </div>
     </section>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top stick-nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-main sticky-top stick-nav">
         <div class="container">
             <a class="navbar-brand" href="#page-top">
                 <div class="navbar-img">
@@ -106,7 +109,7 @@
                         <a class="nav-link" href="#contact">KONTAK</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn btn-sm btn-primary" href="<?= site_url('login') ?>"><i class="fas fa-sign-in-alt"></i> MASUK</a>
+                        <a class="nav-link btn btn-sm btn-primary btn-sticky-main" href="<?= site_url('login') ?>"><i class="fas fa-sign-in-alt"></i> MASUK</a>
                     </li>
                 </ul>
             </div>

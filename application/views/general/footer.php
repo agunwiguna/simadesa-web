@@ -20,7 +20,7 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-12">
-                            <h3 class="text-center">KONTAK</h3>
+                            <h3 class="text-center sub-title">KONTAK</h3>
                             <ul class="list-group contact-info">
                                 <li class="list-group-item"><i class="fas fa-location-arrow"></i> Jln. Babakan Asem No.142, Kecamatan Conggeang, Kabupaten Sumedang, 45391.</li>
                                 <li class="list-group-item"><i class="fas fa-mobile"></i> +62813-2163-4616</li>
@@ -37,7 +37,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <span>© Program Pengabdian Masyarakat, <u>Divisi ERG & Teknik Komputer</u> <b>UNIKOM <?= date('Y')?></b> | Didesain oleh  <a class="btn btn-sm btn-primary" href="https://erg.unikom.ac.id">ERG UNIKOM</a></span>
+                        <span>© Program Pengabdian Masyarakat, <u>Divisi ERG & Teknik Komputer</u> <b>UNIKOM <?= date('Y')?></b> | Didesain oleh  <a class="btn btn-sm btn-primary btn-sticky-main" href="https://erg.unikom.ac.id">ERG UNIKOM</a></span>
                     </div>
                 </div>
             </div>
