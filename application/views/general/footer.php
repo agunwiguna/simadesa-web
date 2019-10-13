@@ -21,8 +21,11 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
+                            <br/>
+                            <h4 class="sub-title">Simadesa Apps</h4>
+                            <br/>
                             <a href="https://play.google.com/store/apps/details?id=com.agunwgn.simadesa">
-                                <img class="playstore" src="<?= base_url('src/general/img/playstore.png') ?>" alt="">
+                                <img class="playstore" src="<?= base_url('src/general/img/playstore.png') ?>" alt="" style="width:250px; height:100px">
                             </a>
                         </div>
                     </div>
