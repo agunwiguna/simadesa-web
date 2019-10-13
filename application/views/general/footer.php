@@ -7,15 +7,6 @@
                         <iframe style="border: 10px solid rgba(255, 255, 255, 0.43);" width="100%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=Babakan%20Asem%20sumedang&t=k&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                       </div>
                     </div>
-                    <div class="row">
-                        <div class="col-12">
-                            <nav class="nav nav-pills flex-column flex-sm-row bg-map">
-                              <a class="flex-sm-fill text-center nav-link nav-info" href="#">Infrastruktur</a>
-                              <a class="flex-sm-fill text-center nav-link nav-warning" href="#">Ekonomi Kreatif</a>
-                              <a class="flex-sm-fill text-center nav-link nav-danger" href="#">Titik Rawan Bencana</a>
-                            </nav>
-                        </div>
-                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="row">
@@ -28,6 +19,13 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href="https://play.google.com/store/apps/details?id=com.agunwgn.simadesa">
+                                <img class="playstore" src="<?= base_url('src/general/img/playstore.png') ?>" alt="">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,7 +35,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center">
-                        <span>© Program Pengabdian Masyarakat, <u>Divisi ERG & Teknik Komputer</u> <b>UNIKOM <?= date('Y')?></b> | Didesain oleh  <a class="btn btn-sm btn-primary btn-sticky-main" href="https://erg.unikom.ac.id">ERG UNIKOM</a></span>
+                        <span>© Simadesa <?= date('Y')?></span>
                     </div>
                 </div>
             </div>
